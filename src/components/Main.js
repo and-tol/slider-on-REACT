@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import styled from 'styled-components';
 
+import Slider from './Slider';
+
 const Repair = styled.div`
 	font-weight: 700;
 	line-height: 50px;
@@ -52,7 +54,9 @@ class Main extends React.Component {
 					</LightText>
 					<CallBtn>Отправить заявку!</CallBtn>
 				</Col>
-				<Col lg={6} lgOffset={1}></Col>
+				<Col lg={6} lgOffset={1}>
+					<Slider />
+				</Col>
 			</Row>
 		)
 	}
